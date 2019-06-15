@@ -16,7 +16,9 @@
   },
   "homepage": "https://github.com/tiagovieira23/juniorvieira#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1"
   },
   "dependencies": {},
   "description": ""
