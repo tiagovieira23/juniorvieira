@@ -1,12 +1,12 @@
 header
     +clearfix
     height: 475px
+    position: relative
     background-image: url('../images/bg-topo.jpg')
     background-position: center top
     background-size: cover
     background-repeat: no-repeat
-    
-
+        
     #topo
         clear: both
         position: fixed
@@ -25,7 +25,11 @@ header
         
         
     nav
+        +breakpoint($tablet)
+            display: none
         
+        +breakpoint($celular)
+            display: none
         ul
             float: right
             padding-top: 15px
@@ -42,5 +46,8 @@ header
                 a:hover
                     text-decoration: none
                     color: $soft-white
+
+    
+    
 
         
