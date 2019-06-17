@@ -1,49 +1,51 @@
-<!DOCTYPE hgtml>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Junior Vieira Cake Designer</title>
-        <link rel="stylesheet" href="css/geral.css">
-        <link rel="stylesheet" href="css/plugins.css">
-        
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Junior Vieira Cake Designer</title>
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/geral.css">
+
+</head>
+
+<body>
+    <main>
         <header>
-           <div class="logo">
-              <a href="index.html">
-               <img src="Images/logo-jv-topo.svg" alt="Logo Junior Vieira">
-              </a> 
-           </div>
-           <nav>
-                <ul>
-                    <li><a href="index.html">Sobre</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Eventos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-           </nav>
-        </header>
-        <main>
-            <div class="bg-topo">
-                <img src="Images/bg-topo.jpg" alt="Foto Junior Vieira Topo">
+            <div id="topo">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Images/logo-jv-topo.svg" alt="Logo Junior Vieira">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="menu-principal">
+                        <li><a href="index.html">Sobre</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
+        <div class="container">
             <section class="presentation">
                 <h1><strong>Junior</strong> Vieira</h1>
-                  <div class="text">
+                <div class="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cumque, consequuntur voluptatum adipisci dolores dicta itaque esse assumenda amet rem earum eum distinctio natus, numquam debitis illum. Iste, necessitatibus, aliquid.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cumque, consequuntur voluptatum adipisci dolores dicta itaque esse assumenda amet rem earum eum distinctio natus, numquam debitis illum. Iste, necessitatibus, aliquid.</p>
-                  </div>
+                </div>
             </section>
             <section class="section-2">
-               <img src="Images/bg-corpo-madeira.jpg" alt="Foto Junior Vieira Madeira"> 
+                <img src="Images/bg-corpo-madeira.jpg" alt="Foto Junior Vieira Madeira">
                 <h2>"Tenho em mim todos os sonhos do mundo"</h2>
-                <p>Fernando Pessoa</p>                    
+                <p>Fernando Pessoa</p>
             </section>
             <section class="section-3">
-                 <div class="text">
+                <div class="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cumque, consequuntur voluptatum adipisci dolores dicta itaque esse assumenda amet rem earum eum distinctio natus, numquam debitis illum. Iste, necessitatibus, aliquid.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cumque, consequuntur voluptatum adipisci dolores dicta itaque esse assumenda amet rem earum eum distinctio natus, numquam debitis illum. Iste, necessitatibus, aliquid.</p>
-                 </div>
+                </div>
             </section>
             <section>
                 <p>Inscreva-se no meu próximo curso online</p>
@@ -54,31 +56,45 @@
             <section>
                 <img src="Images/bg-corpo-desfoque-junior-vieira.jpg" alt="Foto Junior Vieira Desfoque">
                 <div class="form">
-                      
+                    <form action="destino.html" class="action" method="post">
+                        <label for="nome"></label>
+                        <input type="text" name="nome" placeholder="Seu nome" id="nome" size="30" maxlength="80" required>
+
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="Seu email" id="email" size="30" maxlength="80" required>
+
+                        <label for="assunto"></label>
+                        <input type="text" name="assunto" placeholder="Assunto" id="assunto" size="30" maxlength="100" required>
+
+                        <label for="mensagem"></label>
+                        <input type="text" name="mensagem" placeholder="Escreva sua mensagem" id="mensagem" maxlength="500" required>
+                        <input type="submit" value="Enviar mensagem">
+                    </form>
                 </div>
             </section>
-        </main>
-        <footer>
-            <div class="icons">
-                <div class="whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <div class="facebook">
-                    <i class="fab fa-facebook"></i>
-                </div>
-                <div class="instagram">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="email">
-                    <i class="fas fa-at"></i>
-                </div>
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <div class="whatsapp">
+                <i class="fa fa-whatsapp"></i>
             </div>
-            <div class="logo-rodape">
-                <a href="index.html">
-                    <img src="Images/logo-jv.svg" alt="Logo Junior Vieira">
-                </a>
+            <div class="facebook">
+                <i class="fa fa-facebook"></i>
             </div>
-            <p>Termos de uso</p>
-            <p>2019 • Todos os direitos reservados</p>
-        </footer>
-    </body>
+            <div class="instagram">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="email">
+                <i class="fa fa-at"></i>
+            </div>
+        </div>
+        <div class="logo-rodape">
+            <a href="index.html">
+                <img src="Images/logo-jv.svg" alt="Logo Junior Vieira">
+            </a>
+        </div>
+        <p>Termos de uso</p>
+        <p>2019 • Todos os direitos reservados</p>
+    </footer>
+</body>

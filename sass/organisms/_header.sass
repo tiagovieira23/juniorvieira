@@ -1,23 +1,46 @@
 header
     +clearfix
-    background:
-        color: $black
+    height: 475px
+    background-image: url('../images/bg-topo.jpg')
+    background-position: center top
+    background-size: cover
+    background-repeat: no-repeat
+    
 
+    #topo
+        clear: both
+        position: fixed
+        background-color: $grey
+        height: 75px
+        padding: 5px 30px 5px
+        width: 100%
+                
 
     .logo
         float: left
-        margin: 20px
-        padding: 10px 10px 10px 10px
-        img
-            width: 237px
-            height: 52px
+        width: 235px
+        height: 55px
+        padding-top: 5px
+        padding-bottom: 5px
+        
+        
     nav
+        
         ul
-            float: right                 
+            float: right
+            padding-top: 15px
+            padding-bottom: 15px
             li
-                margin: 20px
                 display: inline-block
+                margin: 0px 20px 0px
+                padding-top: 10px
+                padding-bottom: 10px
                 a
                     color: $white
                     text-transform: uppercase
-  
+                    
+                a:hover
+                    text-decoration: none
+                    color: $soft-white
+
+        
